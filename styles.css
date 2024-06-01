@@ -11,7 +11,7 @@ body{
 }
 
 .sidebar{
-    background-color: #121212;
+    background-color:black;
     width: 420px;
     height: 860px;
     border-radius: 1rem;
@@ -30,4 +30,39 @@ body{
     bottom:0;
     height:72px;
     width:100%;
+}
+.nav{
+    width: 376px;
+    height:96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding:0.5rem 0.75rem;
+    background-color: #121212;
+    border-radius: 1rem;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.nav .nav-option i{
+    font-size: 23px;
+    margin-left: 10px;
+}
+.nav .nav-option a{
+    color: white;
+    text-decoration: none;
+    margin-left:17px;
+    font-weight: 700;
+}
+#home{
+    margin-bottom:10px;
+    padding-top: 10px;
+}
+#search{
+    margin-top:10px;
+    padding-bottom:10px;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+#search:hover{
+    opacity: 1;
 }
