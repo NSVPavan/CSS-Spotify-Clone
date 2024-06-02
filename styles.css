@@ -23,6 +23,7 @@ body{
     height: 860px;
     border-radius: 1rem;
     overflow: auto;
+    margin-top: 10px;
 }
 .music-player{
     background-color: black;
@@ -151,4 +152,64 @@ body{
 }
 .badge:hover{
     transform: scale(1.05);
+}
+.sticky-navbar{
+    height:4rem;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0px;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 1rem;
+    background-color: #242424;
+}
+.sticky-nav-icons{
+    margin-left: 20px;
+}
+.sticky-navbar img{
+    width: 1.25rem;
+    height:1.25rem;
+    border:0.38rem solid black;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 0.55;
+    margin-right: 3px;
+    cursor: pointer;
+}
+.sticky-navbar img:hover{
+    opacity: 1;
+}
+.sticky-navbar img:hover{
+    opacity: 1;
+}
+.sticky-nav-options{
+    width: 23rem;
+    margin-right:20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.sticky-navbar .badge{
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
+}
+.sticky-nav-options .badge:nth-child(1){
+    background-color: white;
+    color: black;
+}
+
+#bell,#user{
+    width:36px;
+    height: 36px;
+    border-radius: 50%;
+    padding:0;
+    opacity: 0.75;
+}
+#bell i,#user i{
+    font-size: 1rem;
+    
+}
+#bell:hover,#user:hover{
+    opacity: 1;
 }
