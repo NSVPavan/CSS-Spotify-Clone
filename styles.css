@@ -24,6 +24,8 @@ body{
     border-radius: 1rem;
     overflow: auto;
     margin-top: 10px;
+    background-image: linear-gradient(#242424,black);
+    padding:0rem 1rem 0rem 1rem;
 }
 .music-player{
     background-color: black;
@@ -154,7 +156,7 @@ body{
     transform: scale(1.05);
 }
 .sticky-navbar{
-    height:4rem;
+    height:8rem;
     display: flex;
     flex-direction: row;
     position: sticky;
@@ -162,11 +164,28 @@ body{
     justify-content: space-between;
     align-items: center;
     border-top-left-radius: 1rem;
-    background-color: #242424;
+    /* background-color: #242424; */
+    background-image: linear-gradient(#222222,#1e1e1e);
+    flex-wrap: wrap;
 }
-.sticky-nav-icons{
-    margin-left: 20px;
+.what-to-listen{
+    width:100%;
+    /* padding: 0px 16px 0px 16px; */
 }
+.what-to-listen .badge{
+    background-color: rgba(255,255,255,0.07);
+    color: white;
+}
+.what-to-listen .badge:hover{
+    background-color: rgba(255,255,255,0.1);
+    transform: none;
+}
+
+.what-to-listen .badge:nth-child(1){
+    background-color: white;
+    color: black;
+}
+
 .sticky-navbar img{
     width: 1.25rem;
     height:1.25rem;
@@ -185,11 +204,10 @@ body{
 }
 .sticky-nav-options{
     width: 23rem;
-    margin-right:20px;
     display: flex;
     justify-content: space-evenly;
 }
-.sticky-navbar .badge{
+.sticky-navbar .sticky-nav-options .badge{
     background-color: black;
     color: white;
     margin-bottom: 10px;
@@ -213,3 +231,72 @@ body{
 #bell:hover,#user:hover{
     opacity: 1;
 }
+@media (max-width:1024px) {
+    .sticky-nav-icons #arrow-right{
+        display: none;
+    }
+    .sticky-nav-options .badge:nth-child(1){
+        display: none;
+    }
+    .sticky-nav-options{
+        width:14rem;
+    }
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-row{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-heading{
+    width:100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.card-heading h1{
+    margin: 0px;
+}
+.card{
+    margin-top: 10px;
+    width:183px;
+    height:264px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 0.5rem;
+    transition: background-color 0.5s;
+    margin-right: 30px;
+}
+.card:hover{
+    background-color: rgba(255,255,255,0.07);
+}
+.card p{
+    margin:0px;
+}
+.card .image-container{
+    display: flex;
+    justify-content: center;
+}
+.card-img{
+    width:166px;
+    height:166px;
+    border-radius: 0.5rem;
+}
+.card-description{
+    width:187px;
+    height:66px;
+    padding-left: 12px;
+}
+.card-description p:nth-child(1){
+    font-weight: 500;
+    font-size: 0.9rem;
+}.card-description p:nth-child(2){
+    font-size: 0.83rem;
+    font-weight: 200;
+}
+
