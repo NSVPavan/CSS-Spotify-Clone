@@ -368,7 +368,7 @@ footer div{
     height: 4px;
     opacity: 0.35;
 }
-input[type='range']::-webkit-slider-thumb {
+.playback-bar [type='range']::-webkit-slider-thumb {
     display: none;
 }
 .playback-bar .curr-timestamp,.end-timestamp{
@@ -415,10 +415,19 @@ input[type='range']::-webkit-slider-thumb {
     margin-bottom: 3px;
     font-weight: 500;
 }
+.song:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 .artist{
     margin:0px;
     opacity:0.8;
     font-size: 11px;
+}
+.artist:hover{
+    opacity: 1;
+    text-decoration: underline;
+    cursor: pointer;
 }
 .like-song{
     height: 1.5rem;
@@ -432,4 +441,61 @@ input[type='range']::-webkit-slider-thumb {
 .unknown-icon{
     height:2rem;
     width:2rem;
+}
+.controls{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.controls-container{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+.controls-container img:nth-child(1){
+    height: 2.2rem;
+    width: 1.5rem;
+}
+.controls-container img:nth-child(2){
+    height: 2.2rem;
+    width: 1.5rem;
+}
+.controls-container img:nth-child(3){
+    height: 1.2rem;
+    width: 1.2rem;
+    opacity: 0.7;
+}
+.controls-container img:nth-child(4){
+    height: 0.9rem;
+    width: 1rem;
+    opacity: 0.7;
+}
+.controls-container img:nth-child(5){
+    height: 2.2rem;
+    width: 1.5rem;
+}
+.controls-container img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+#device-icon{
+    height: 1.9rem;
+    width: 1.5rem;
+}
+#device-icon:hover{
+    opacity: 1;
+}
+.volume{
+    width: 93px;
+    height: 4px;
+}
+.expand-icon{
+    opacity: 0.7;
+}
+.expand-icon:hover{
+    transform: scale(1.1);
+    opacity: 1;
 }
